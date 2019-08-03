@@ -1,0 +1,17 @@
+body, html{
+    background: url("../imagens/fundo2.jpg");
+}
+
+.logo{
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+section{
+    
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
