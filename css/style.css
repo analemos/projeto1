@@ -1,20 +1,28 @@
-body, html{
-    background: url("../imagens/fundo2.jpg");
-    background-repeat: no-repeat;
+
+:root{
+    --title-font: 'Arimo', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+} 
+
+body{
+    background: url("../imagens/fundo-lp.PNG");
+    background-size: 100% auto;
 }
 
 .logo{
     position: relative;
     text-align: center;
     font-size: 40px;
-    color: aliceblue;
+    color: black;
+    font-family: var(--title-font);
+    font-size: 3vw;
 }
 
-section{
-    margin: 100px;
+.value-proposition-lbl{
     text-align: center;
-    font-size: 30px;
     color: aliceblue;
+    font-family: var(--body-font);
+    font-size: 2.5vw;
 }
 
 .catBtnContainer{
@@ -25,12 +33,15 @@ section{
 
 .catBtn{
     color:#F5F0FF;
-    margin: 100px auto;
+    margin: 50px auto;
     width: 500px;
     padding:10px 20px;
     background-color: #3a93cf;
     border-radius:7px;
     box-shadow:0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: 2.5vw;
 }
 
 #iconsContainer{
@@ -49,8 +60,22 @@ i{
     color: #3a93cf;
 }
 
-
 h6{
     margin-top: 10px;
     color: aliceblue;
+    
+}
+
+@media screen and (max-width: 800px) {
+    #iconsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: center;
+        
+    }
+    div.macrogrupoItem{
+        width: 100%;
+
+    }
 }
